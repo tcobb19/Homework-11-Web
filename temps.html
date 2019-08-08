@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <style>
+  p {
+      margin-left: 2%;
+      margin-right: 2%;
+  }
+  h2 {
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+  body {
+      background-color: aquamarine;
+  }
+  div {
+      background-color: aliceblue;
+  }
+  </style>
+  <title>Temperatures by Latitude</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar nav-link" href="index.html">Home</a>
+    <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="comparison.html">Comparison</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="data.html">Data</a>
+          </li>            
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Plots
+            </a>
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="temps.html">Temperature</a>
+            <a class="dropdown-item" href="humidity.html">Humidity</a>
+            <a class="dropdown-item" href="clouds.html">Cloud Cover</a>
+            <a class="dropdown-item" href="wind.html">Wind Speed</a>
+          </div>
+        </li>
+    </div>
+  </nav>
+
+    <div class = "container" style = "width: 98%;">
+        <h2>Temperatures by Latitude</h2>
+        <img src = "Output/Temps.png"> <br>
+        <p>One might take it as a given that temperature increases as one approaches the equator.  While this is true, with overall 
+            global temperatures forming a trend similar to an inverted parabola, the apex is not centered on the equator.  Due to 
+            the readings being taken at the height of northern hemisphere summer (July 2nd), the distribution is centered north of 
+            the equator, with the greatest temperatures appearing around 20 north latitude.</p>
+    </div>
+</body>
+</html>

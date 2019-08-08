@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <style>
+  p {
+      margin-left: 2%;
+      margin-right: 2%;
+  }
+  h2 {
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+  body {
+      background-color: aquamarine;
+  }
+  div {
+      background-color: aliceblue;
+  }
+  </style>
+  <title>Cloud Cover by Latitude</title>
+</head>
+
+<body>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar nav-link active" href="index.html">Home</a>
+            <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="comparison.html">Comparison</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="data.html">Data</a>
+                  </li>            
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Plots
+                    </a>
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="temps.html">Temperature</a>
+                    <a class="dropdown-item" href="humidity.html">Humidity</a>
+                    <a class="dropdown-item" href="clouds.html">Cloud Cover</a>
+                    <a class="dropdown-item" href="wind.html">Wind Speed</a>
+                  </div>
+                </li>
+            </div>
+          </nav>
+    <div class = "container" style = "width: 98%;">
+        <h2>Cloud Cover by Latitude</h2>
+        <img src = "Output/Clouds.png">
+        <p>
+            There is no apparent correlation between latitude and cloud cover.  Cloudiness is a function not only of local light intensity
+            and temperatures but also of topography, wind direction, humidity, and movement of air masses from other areas.  The most noticable
+            trend is the clustering of values at certain round values (such as 100%, 90%, 75%, 40%, etc) across all latitudes.  This is possibly
+             due to the data being entered at many weather stations as an eyeball estimate rather than a measured value of how much of the sky is 
+             covered by cloud.
+        </p>
+    </div>
+</body>
+</html>
+

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <style>
+  p {
+      margin-left: 2%;
+      margin-right: 2%;
+  }
+  h3 {
+      text-align: center;
+  }
+  img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+  }
+  body {
+      background-color: aquamarine;
+  }
+
+  div {
+      background-color: aliceblue;
+  }
+  </style>
+  <title>Data Comparison</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar nav-link" href="index.html">Home</a>
+        <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="comparison.html">Comparison</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="data.html">Data</a>
+              </li>            
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Plots
+                </a>
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="temps.html">Temperature</a>
+                <a class="dropdown-item" href="humidity.html">Humidity</a>
+                <a class="dropdown-item" href="clouds.html">Cloud Cover</a>
+                <a class="dropdown-item" href="wind.html">Wind Speed</a>
+              </div>
+            </li>
+        </div>
+      </nav>
+   
+    <div class="container-fluid" style = "width:98%;">
+        <h2 style = "margin-left: 3%; margin-right: 3%">Comparison: Metrics by Latitude</h2>
+        <div class ="row">
+            <div class = "col-md-6">
+                <h3>Temperature by Latitude</h3></br>
+                <img src = "Output/Temps.png">
+            </div>
+            <div class = "col-md-6">
+                <h3>Humidity by Latitude</h3></br>
+                <img src = "Output/Humidity.png">
+            </div>
+        </div>
+        <div class = "row">
+            <div class = "col-md-6">
+                <h3>Cloud Cover by Latitude</h3></br>
+                <img src = "Output/Clouds.png">
+            </div>
+            <div class = "col-md-6">
+                <h3>Wind Speed by Latitude</h3><br>
+                <img src = "Output/Windspeed.png">
+            </div>
+        </div>
+    </div>
+    </body>
+</html>
+    
